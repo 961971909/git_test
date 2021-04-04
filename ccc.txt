@@ -1,0 +1,13 @@
+按下按键
+１．进入异常模式
+ b vector_irq +　xxx
+2.__irq_usr
+3.b asm_do_IRQ
+
+4.orq_desc->handle_irq
+5.handle_edge_irq
+
+
+request_irq()	注册中断
+
+free_irq()	释放中断
